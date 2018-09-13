@@ -1,0 +1,862 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Myriad Pro, sans-serif;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.main,
+.header {
+    width: 80%;
+    max-width: 1150px;
+    margin: 0 auto;
+    min-width: 350px;
+}
+
+.main {
+    padding: 0 60px 60px;
+    background: #160404;
+    height: inherit;
+    border-radius: 0 0 8px 8px;
+}
+
+.header {
+    padding-left: 60px;
+    padding-right: 60px;
+    background: url(header.jpg) no-repeat;
+    background-position: center 1%;
+    background-origin: content-box;
+    background-size: auto, cover;
+    height: 560px;
+    border-radius: 8px 8px 0 0;
+}
+
+.about_block {
+    color: #fff;
+    margin: 0 0 70px;
+}
+
+.about_block p,
+.about {
+    margin: 0;
+}
+
+.about_left {
+    width: 30%;
+    float: left;
+}
+
+.about_left2 {
+    display: none;
+}
+
+.about_left > p {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.about_left2 > p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.about_left2 > p > span {
+    color: #ff9900;
+}
+
+.about_left > p > span {
+    padding-right: 10px;
+    color: #ff9900;
+}
+
+.about_right {
+    width: 60%;
+    float: right;
+}
+
+.about {
+    list-style: url(icon-check.png);
+}
+
+.about > li {
+    line-height: 2.5;
+    font-weight: 600;
+    padding-left: 10px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+
+
+/*******************padding*********************/
+
+.padding {
+    padding: 30px 60px 30px;
+}
+
+/*********************часы и акция*******************/
+
+.about_curren,
+.offer {
+    width: 49%;
+    height: 480px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.about_curren {
+    float: left;
+    background: #e1b891;
+    position: relative;
+}
+
+.about_curren_padding {
+    padding: 30px;
+}
+
+.curren_foto {
+    position: absolute;
+    top: 20px;
+    right: 3%;
+    height: 400px;
+}
+
+.about_curren h5 {
+    color: #c26427;
+    font-weight: 600;
+    font-size: 1.6em;
+    line-height: 1;
+    margin: 0;
+}
+
+.about_curren p {
+    color: #cb9e75;
+    font-weight: 700;
+    padding: 80px 0;
+    margin: 0;
+    font-size: 1.4em;
+    line-height: 1;
+}
+
+.about_curren p span {
+    color: #0e0d10;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.about_curren_list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.about_curren_list > li {
+    margin-left: 0;
+    color: #0e0d10;
+    font-size: 1.2em;
+}
+
+.offer {
+    background: #ffeadc;
+    float: right;
+}
+
+.offer h2 {
+    color: #160404;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.offer p {
+    text-align: center;
+}
+
+.stock {
+    color: #ac9d8f;
+    text-decoration: line-through;
+    text-align: center;
+    font-size: 1.8em;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.stock + span {
+    color: #f72505;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.btn {
+    border-radius: 8px;
+    background: #f72505;
+    width: 90%;
+    margin: 1% 5%;
+    color: #fff;
+    font-size: 2em;
+    padding: 20px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+/*полностью сделанный таймер*/
+
+#clock div,
+#clock2 div {
+    border-radius: 8px;
+}
+
+#clock,
+#clock2 {
+    height: 150px;
+    margin-top: 55px;
+    color: #d6986a;
+}
+
+.clock_position {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.clock_position div {
+    float: left;
+}
+
+.text {
+    font-size: .8em;
+    text-align: center;
+}
+
+.timer_text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    margin: 0;
+    font-weight: 600
+}
+
+.timer {
+    margin: 5px;
+    border: 1px solid #d6986a;
+    padding: 2px 5px;
+    background: #fff;
+    font-size: 3.5em;
+}
+
+.none {
+    font-size: 3em;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+/*Почему выбирают*/
+
+.why {
+    color: #160404;
+    background: #e7e7e7;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.why h4 {
+    text-align: center;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.66em;
+}
+
+.why h5 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.why div {
+    float: left;
+    line-height: 1.3;
+}
+
+.why_one {
+    width: 39%;
+    margin-right: 3%;
+}
+
+.why_two {
+    width: 21%;
+    margin-right: 3%;
+}
+
+.why_three {
+    width: 34%;
+}
+
+.btn_full {
+    width: 100%;
+    margin: 25px 0;
+}
+
+/*Блок характеристики и галерея*/
+
+.characteristic > div {
+    width: 49%;
+    color: #fff;
+}
+
+.foto_video {
+    float: left;
+    height: 100%;
+}
+
+.foto,
+.video {
+    background: #2e2e2e;
+    height: 437.5px;
+    border-radius: 8px;
+}
+
+.foto {
+    margin-bottom: 25px;
+}
+
+.video_where {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.description {
+    text-transform: uppercase;
+    background: #003366;
+    float: right;
+    height: 900px;
+    border-radius: 8px;
+}
+
+.description h4,
+.foto_video h4 {
+    text-align: center;
+    margin: 30px 0 45px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.66em;
+}
+
+.description table {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 25px;
+}
+
+.description table td {
+    padding-bottom: 50px;
+    width: 50%;
+}
+
+.description table tr td:first-child {
+    text-align: right;
+    vertical-align: top;
+    padding-right: 10px;
+    color: #6592bf;
+}
+
+.description table tr td:last-child {
+    font-weight: 600;
+}
+
+.foto_video h4 {
+    padding: 30px 0 30px;
+    margin: 0;
+}
+
+/*Оформление заказа*/
+
+.order {
+    background: #c3c3fe;
+    margin: 0 0 30px;
+    border-radius: 8px;
+}
+
+.order h4 {
+    text-align: center;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.66em;
+}
+
+.step {
+    width: 23%;
+    float: left;
+    margin-right: 2%;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.step_number {
+    background: #003366;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+/*Спецпредложение и форма*/
+
+#clock2 {
+    margin-top: 0px;
+}
+
+.last_offer_remember,
+.form {
+    width: 49%;
+    height: 480px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.last_offer_remember {
+    float: left;
+    background: #ffeadc;
+    /*    position: relative;*/
+}
+
+.jeep_foto_div,
+.curren_foto_div {
+    width: 40%;
+}
+
+.jeep_foto_div {
+    float: left;
+}
+
+.curren_foto_div {
+    float: right;
+}
+
+.jeep_foto,
+.curren_foto2 {
+    height: 200px;
+}
+
+.curren_foto2 {
+    position: relative;
+    right: -20%;
+}
+
+.jeep_foto {
+    position: relative;
+    left: -20%;
+}
+
+.gift {
+    background: #000;
+    color: #fff;
+    padding: 13px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100px;
+    position: relative;
+    right: -20%;
+}
+
+.price {
+    width: 230px;
+    padding: 10px;
+    position: relative;
+    left: -20%;
+}
+
+.price > span {
+    font-size: 1.2em;
+}
+
+.price > span:first-child {
+    color: #ac9d8f;
+    text-decoration: line-through;
+    background: #fff;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+}
+
+.price > span:last-child {
+    color: #fff;
+    padding-left: 5px;
+    background: #f72505;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+}
+
+.plus {
+    display: inline-block;
+    color: #cb9e75;
+    font-weight: 700;
+    width: 20%;
+    text-align: center;
+    font-size: 4em;
+}
+
+.form {
+    float: right;
+    background: #e7e7e7;
+    text-transform: uppercase;
+}
+
+.form h4 {
+    color: #160404;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.66em;
+}
+
+#form input {
+    width: 90%;
+    margin: 2% 5%;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    padding: 20px 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#form input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#form input:focus {
+    outline: none;
+}
+
+#form input:nth-child(2) {
+    margin-bottom: 25px;
+}
+
+#form input:last-child {
+
+    height: 80px;
+    font-size: 2.5em;
+}
+
+#form > input::placeholder {
+    color: #afafaf;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.form_error {
+    display: none;
+    text-transform: none;
+    padding: 0 25px;
+    margin-top: -25px;
+}
+
+#form_answer {
+    text-transform: none;
+    padding: 0 25px;
+    margin-top: -25px;
+}
+
+#form > input:invalid:not(:placeholder-shown) + .form_error {
+    display: block;
+}
+
+/******************карусель************************/
+.bx-wrapper{
+    margin-bottom: 0 !important;
+    border: none !important;
+}
+.bx-caption, .bx-pager, .bx-default-pager
+{
+    display: none;
+}
+.bx-wrapper img{
+    margin: 0 auto;
+}
+.carousel_padding {
+    padding: 0 25px 25px;
+}
+
+/*адаптация*/
+
+@media screen and (max-width: 1270px) {
+    .main,
+    .header {
+        width: 98%;
+        padding: 0 1%;
+    }
+    .main {
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 1213px) {
+    .about > li {
+        font-size: 2vw;
+        -ms-font-size: 1em;
+        line-height: 2.8;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .curren_foto {
+        height: 40vh;
+    }
+    .about_curren p,
+    .about_curren_list > li {
+        font-size: 1em;
+    }
+    .about_curren p {
+        padding: 150px 0px 80px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .about_curren p {
+        padding: 220px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .description table {
+        -moz-font-size: .8em;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .padding {
+        padding: 5px 10px;
+    }
+    .jeep_foto,
+    .price {
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+    iframe,
+    .video_where {
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .stock {
+        font-size: 1.5em;
+    }
+    .stock + span {
+        font-size: 2.2em;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .header {
+        height: 300px;
+        background-size: auto 110%, cover;
+    }
+
+    .about_curren,
+    .offer,
+    .last_offer_remember,
+    .form,
+    .characteristic > div {
+        width: 100%;
+        float: none;
+    }
+    .padding {
+        padding: 15px 20px;
+    }
+    .about_left > p {
+        text-align: left;
+        font-size: 6vw;
+        line-height: 1.2;
+    }
+    .description h4,
+    .offer h2 {
+        padding: 20px 0 0;
+    }
+    .stock {
+        font-size: 5vw;
+    }
+    .stock + span {
+        font-size: 8vw;
+    }
+    .jeep_foto,
+    .price {
+        left: 25%;
+    }
+    .description table {
+        font-size: 3vw;
+        padding-bottom: 0;
+    }
+    .description h4 {
+        margin-bottom: 10px;
+    }
+    .description {
+        height: inherit;
+    }
+    .description table td {
+        padding-bottom: 30px;
+        width: 50%;
+    }
+    .step {
+        font-size: 1.1em;
+    }
+    .curren_foto {
+        height: 400px;
+    }
+
+    .about_curren p {
+        padding: 80px 0;
+        font-size: 1.4em;
+    }
+
+    .about_curren p span {
+        color: #0e0d10;
+        font-weight: 700;
+        font-size: 2em;
+    }
+    .about_curren_list > li {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .padding {
+        padding: 5px;
+    }
+    .step {
+        width: 46%;
+    }
+    .why_one,
+    .why_two,
+    .why_three {
+        width: 100%;
+        margin: 0;
+    }
+    .why h5 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .jeep_foto,
+    .price {
+        left: 10%;
+    }
+    .curren_foto {
+        height: 30vh;
+    }
+    .about_curren {
+        height: 400px;
+    }
+    .about_curren p,
+    .about_curren_list > li {
+        font-size: 1em;
+    }
+    .about_curren p {
+        padding: 80px 0px 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .about_left2,
+    .about_right {
+        width: 100%;
+    }
+    .about_left {
+        display: none;
+    }
+    .about_left2 {
+        display: block;
+    }
+    .about_right > ul > li {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .jeep_foto,
+    .price {
+        left: 0;
+    }
+    .price,
+    .gift {
+        font-size: .8em;
+        padding: 2px;
+    }
+    .price {
+        margin-top: 35px;
+    }
+    .gift {
+        margin-top: 25px;
+        padding: 13px 0;
+    }
+    .plus {
+        text-align: right;
+
+    }
+    .jeep_foto,
+    .curren_foto2 {
+        height: 150px;
+    }
+    #clock2 {
+        font-size: .8em;
+        width: 320px;
+        margin: 0 auto;
+    }
+    .last_offer_remember {
+        height: 360px;
+    }
+    .curren_foto {
+        height: 35vh;
+    }
+    .about_curren {
+        height: 360px;
+    }
+    .about_curren p,
+    .about_curren_list > li {
+        font-size: .9em;
+    }
+    .about_curren p {
+        padding: 60px 0px 60px;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    .step {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .curren_foto {
+        height: 40vh;
+    }
+}
